@@ -16,10 +16,10 @@ typedef void (^WebPAnimationFinished)(NSInteger);
 /**
  Set the image to display.
  */
-@property(nonatomic)WebPImage *image;
+@property(nonatomic, strong)WebPImage *image;
 
 /**
-fetch the image from disk or remotely.
+ fetch the image from disk or remotely.
  */
 @property(nonatomic)NSURL *url;
 
